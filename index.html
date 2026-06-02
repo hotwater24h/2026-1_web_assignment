@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 사이트</title>
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery 라이브러리 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- 네비게이션 바 -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">2026</div>
+            
+            <!-- 모바일용 햄버거 메뉴 아이콘 -->
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#" class="nav-item active-link" data-target="about">HOME</a></li>
+                <li><a href="#" class="nav-item" data-target="travel">여행기</a></li>
+                <li><a href="#" class="nav-item" data-target="cooking">요리</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메인 컨텐츠 (SPA 영역) -->
+    <main>
+        <!-- 1페이지: 자기소개 (초기 표시) -->
+        <section id="about" class="page active">
+            <div class="container">
+                <h1>안녕하세요</h1>
+                <img src="img/sangcheolchoi.jpg" alt="프로필 사진" class="profile-img">
+                <div class="profile-content">
+                    <p>저는 강원대학교에 재학하고 있는 최상철입니다.</p>
+                    <p>chel11@naver.com으로 연락주세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2페이지: 여행기 -->
+        <section id="travel" class="page">
+            <div class="container">
+                <h1>나의 여행기</h1>
+                <div class="travel-detail">
+                    <div class="travel-detail-text">
+                        <h3>청평사 가는 길</h3>
+                        <p>300번 버스를 타고 춘천역에서 내린 다음 소양2교를 건너 소양강 댐 정상으로 가는 버스를 타고 종점에 내립니다.</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_map1.jpg" alt="청평사 지도" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 지도</h3>
+                        <p>청평사 지도입니다.</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_temple.jpg" alt="청평사 사찰" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 사찰</h3>
+                        <p>청평사 사찰 전경</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_maru.jpg" alt="청평사 마루" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 2층 마루</h3>
+                        <p>청평사 사찰 건물 2층에 있는 마루입니다.</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_biseok.jpg" alt="청평사 비석" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 비석</h3>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_tower.jpg" alt="청평사 탑1" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 탑</h3>
+                        <p>첨성대와 비슷하게 생긴 탑입니다.</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_tower_high.jpg" alt="청평사 꼭대기탑" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 탑2</h3>
+                        <p>청평사 뒤에 있는 산을 올라가다보면 있는 샛길 꼭대기에 있는 탑입니다.</p>
+                    </div>
+                </div>
+                <div class="travel-detail">
+                    <img src="img/cheongpyeong_bell.jpg" alt="청평사 종" class="travel-detail-img">
+                    <div class="travel-detail-text">
+                        <h3>청평사 종</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3페이지: 자취 요리 저장소 -->
+        <section id="cooking" class="page">
+            <div class="container">
+                <h1>자취 요리 저장소</h1>
+                <div class="recipe-card">
+                    <h2>🥘 구수한 된장찌개</h2>
+                    <hr>
+                    <div class="recipe-info">
+                        <h3>[재료 준비]</h3>
+                        <ul>
+                            <li>된장 2큰술, 물(또는 육수) 500ml</li>
+                            <li>감자 1개, 양파 1/2개, 애호박 1/4개</li>
+                            <li>두부 1/2모, 청양고추 1개, 대파 약간</li>
+                        </ul>
+                        <br>
+                        <h3>[조리 순서]</h3>
+                        <ol>
+                            <li>감자와 양파, 애호박을 먹기 좋은 크기로 썰어줍니다.</li>
+                            <li>냄비에 물을 붓고 단단한 감자부터 넣어 끓입니다.</li>
+                            <li>물이 끓기 시작하면 된장을 곱게 풀어줍니다.</li>
+                            <li>나머지 채소와 두부를 넣고 한소끔 더 끓인 뒤, 고추와 파로 마무리합니다.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
